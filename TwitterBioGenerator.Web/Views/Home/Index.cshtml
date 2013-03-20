@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div class="wrapper">
+    <h1>Twitter Bio Generator</h1>
+    <div class="ad_column">
+        <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-8473773197641056";
+            google_ad_slot = "7193018165";
+            google_ad_width = 160;
+            google_ad_height = 600;
+        //-->
+        </script>
+        <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+    </div>
+    <div class="main_col">
+        <div style="margin-bottom:1em;">
+            <p class="intro">Don't think too hard about it. Use this thingy to generate a Twitter bio for yourself.</p>
+            <a href="@Url.Action("Index", "Home")" class="generate">Regenerate Bio</a>
+            <textarea id="bio">@Model</textarea>
+        </div>
+        <div style="clear:left;">
+            <div style="float:left;">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitterbiogenerator.com" data-text="Don't think too hard about it. Use this thingy to generate a Twitter bio for yourself:">Tweet</a>
+                <script>    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+            </div>
+            <div style="float:left;">
+                <div class="fb-like" data-href="http://twitterbiogenerator.com/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="verdana"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <p>Created by <a href="http://twitter.com/joshjs">@@joshjs</a> in Wisconsin.</p>
+</div>
+<script>
+    var bio = document.getElementById("bio");
+    bio.onfocus = function () {
+        bio.select();
+        bio.onmouseup = function () {
+            bio.onmouseup = null;
+            return false;
+        };
+    };
+</script>

@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=VT323);
+
+
+body, body.help, html body.help, html body.goodies, html body#goodies {
+    background-color:#c0deed;
+    color:#333;
+	font-family:Verdana,Sans-serif;
+	font-size:1em;
+    padding-top: 20px !important;
+    padding-bottom: 30px;
+}
+body 
+{
+}
+h1
+{
+    float:left;
+    clear: none;
+    display: block;
+    font-weight: 300;
+    padding: 0;
+    font-size: 30px;
+    margin:0;
+    margin-top: -8px !important;
+    padding:0;
+    padding-bottom: 12px !important;
+    padding-top: 8px !important;
+    line-height: 118% !important;
+    width: 90%;
+}
+p
+{
+	font-size:1em;
+}
+a
+{
+    color:#0084B4;
+	font-size:1em;
+	text-decoration:none;
+}
+a:hover  { text-decoration:underline;}
+textarea
+{
+	font-family:Verdana,Sans-serif;
+	font-size:1em;
+	height:60px;
+	width:400px;
+}
+.clear
+{
+    clear:both;
+}
+#container
+{
+    width: 980px;
+    margin: 0 auto;
+}
+div#pageContent
+{
+    background: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px #A8CFE5;
+    -moz-box-shadow: 0 1px 3px #a8cfe5;
+    box-shadow: 0 1px 3px #A8CFE5;    
+}
+.wrapper {
+    padding: 15px 20px;
+    font: 13px/20px Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.main_col
+{
+    margin-bottom:1em;
+}
+.intro
+{
+    font-size: 18px;
+    line-height: 27px !important;
+    color: #666 !important;
+    width: 85%;
+}
+.ad_column
+{
+    float:right;
+    margin-bottom:1em;
+    width:180px;
+}
+.generatedBio
+{
+	margin-bottom:2em;	
+}
+.generate, .generate:visited {
+	background-color:#fff;
+	display:inline-block;
+	float:left;
+	font-weight:bold;
+	padding:5px 10px 6px;
+	margin-right:10px;
+	margin-bottom:1em;
+	color:#0084B4;
+	text-decoration: none;
+	border:1px solid #0084B4;
+}
+
+.twitter-count-horizontal
+{
+    width:90px !important;
+}

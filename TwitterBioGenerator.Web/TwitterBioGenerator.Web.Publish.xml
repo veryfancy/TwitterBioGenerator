@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="ftp://ftp.joshjs.com/twitterbiogenerator.com/wwwroot" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Live" publishMethod="FTP" replaceMatchingFiles="False" userName="joshjs" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaRMI1lDb5UK4msc4pE+5wwAAAAACAAAAAAAQZgAAAAEAACAAAADe70vQDcvZocty2bMvxgHnv2FeNcu5Re+0xXlSv6GsSgAAAAAOgAAAAAIAACAAAAD4h8FqrQH8EX6pavL3qpEwE1t9C6SVugic380ByRTDbiAAAAAdVqELn1/8KDPEsoYJRA5ZnxQh6yxzQIpvUytm8Acv80AAAADG4KJ6xDrAzgQWCufGn5xj1ISr7sMMicKk/wLfpAAaZM3CxVroP6HZOHuWv+7tseLD1Wo1t0bcHl9W22yXIGSl" SelectedForPublish="True">
+    <file relUrl="bin/TwitterBioGenerator.Web.pdb" publishTime="02/25/2012 17:29:54" />
+    <file relUrl="Web.config" publishTime="02/25/2012 16:31:07" />
+    <file relUrl="bin/EntityFramework.dll" publishTime="02/25/2012 16:03:28" />
+    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="07/30/2012 21:40:43" />
+    <file relUrl="packages.config" publishTime="02/25/2012 16:03:28" />
+    <file relUrl="bin/EntityFramework.xml" publishTime="02/25/2012 16:03:28" />
+    <file relUrl="Views/Home/Index.cshtml" publishTime="07/30/2012 22:04:50" />
+    <file relUrl="Styles/site.css" publishTime="07/30/2012 21:55:16" />
+    <file relUrl="Styles/iphone.css" publishTime="07/30/2012 22:02:35" />
+    <file relUrl="Views/Web.config" publishTime="02/25/2012 16:03:25" />
+    <file relUrl="Views/Shared/Error.cshtml" publishTime="02/25/2012 16:03:25" />
+    <file relUrl="Views/_ViewStart.cshtml" publishTime="02/25/2012 16:03:25" />
+    <file relUrl="Scripts/jquery-1.7.1.js" publishTime="02/25/2012 16:25:10" />
+    <file relUrl="Global.asax" publishTime="02/25/2012 16:03:25" />
+    <file relUrl="Scripts/jquery-1.7.1.min.js" publishTime="02/25/2012 16:25:10" />
+    <file relUrl="bin/TwitterBioGenerator.Web.dll" publishTime="02/25/2012 17:29:54" />
+  </publishProfile>
+</publishData>
