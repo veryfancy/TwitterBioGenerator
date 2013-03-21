@@ -99,13 +99,16 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="Models\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\twitterbiogenerator - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\twitterbiogenerator - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
