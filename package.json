@@ -1,0 +1,22 @@
+{
+  "name": "twitterbiogenerator",
+  "version": "2.0.0",
+  "description": "Toy site for generating generic Twitter bios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veryfancy/TwitterBioGenerator.git"
+  },
+  "author": "Josh Schultz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veryfancy/TwitterBioGenerator/issues"
+  },
+  "homepage": "https://github.com/veryfancy/TwitterBioGenerator#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
