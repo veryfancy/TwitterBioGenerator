@@ -1,7 +1,8 @@
 const express = require("express");
 const server = express();
 const generateBio = require("./generator");
-const port = 8070;
+
+const port = process.env.PORT || 8070;
 
 server.get("/generate", function (req, res) {
     const bio = generateBio();
