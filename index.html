@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css" />
     <title>Twitter Bio Generator</title>
     <meta name="description" content="Randomly generate a Twitter bio for yourself." />
     <meta name="keywords" content="Twitter Bio Generator, Twitter Profile Generator, Twitter Bio, Twitter Profile" />
-    <link href="/site.css" type="text/css" rel="stylesheet" />
     <script src="/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -31,56 +32,48 @@
             fjs.parentNode.insertBefore(js, fjs);
         } (document, 'script', 'facebook-jssdk'));
     </script>
-    <div id="container">
-        <div id="pageContent">
-            <div class="wrapper">
-                <h1>Twitter Bio Generator</h1>
-                <div style="float:right"><a target="_blank"  href="https://www.amazon.com/gp/product/1939924472/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1939924472&linkCode=as2&tag=twttrbiogen-20&linkId=6fc75cfd1a6ceba18146d8902166c892"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1939924472&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=twttrbiogen-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=twttrbiogen-20&l=am2&o=1&a=1939924472" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
-                <div class="main_col">
-                    <div style="margin-bottom:1em;">
-                        <p class="intro">Don't think too hard about it. Use this thingy to generate a Twitter bio for yourself.</p>
-                        <a id="generate" href="#" class="generate">Generate Bio</a>
-                        <textarea id="bio"></textarea>
-                    </div>
-                    <div style="clear:left;">
-                        <div style="float:left; margin-right: 5px;">
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitterbiogenerator.com" data-text="Don't think too hard about it. Use this thingy to generate a Twitter bio for yourself:">Tweet</a>
-                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
-                        </div>
-                        <div style="float:left">
-                            <div class="fb-like" data-href="http://twitterbiogenerator.com/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="verdana"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <p>Created by <a href="http://twitter.com/joshjs">@joshjs</a>.</p>
-                <div class="clear"></div>
+    <div id="pageContent" class="container">
+        <h1>Twitter Bio Generator</h1>
+        <p class="intro">Don't think too hard about it. Use this thingy to generate a Twitter bio for yourself.</p>
+        <div><textarea id="bio"></textarea></div>
+        <div style="float:right">
+                <p><a target="_blank"  href="https://www.amazon.com/gp/product/1939924472/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1939924472&linkCode=as2&tag=twttrbiogen-20&linkId=6fc75cfd1a6ceba18146d8902166c892"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1939924472&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=twttrbiogen-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=twttrbiogen-20&l=am2&o=1&a=1939924472" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
             </div>
-            <script>
-                var bio = document.getElementById("bio");
-                bio.onfocus = function () {
-                    bio.select();
-                    bio.onmouseup = function () {
-                        bio.onmouseup = null;
-                        return false;
-                    };
-                };
-
-                function getBio() {
-                    $.get("/generate", function (data) {
-                        bio.value = data;
-                    });
-                }
-
-                var generate = document.getElementById("generate");
-                generate.onclick = function (e) {
-                    e.preventDefault();
-                    getBio();
-                }
-
-                getBio();
-            </script>
+            <div><p><a id="generate" href="#" class="generate">Generate Bio</a></p></div>
+        <div class="container">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitterbiogenerator.com" data-text="Don't think too hard about it. Use this thingy to generate a Twitter bio for yourself:">Tweet</a>
+            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
         </div>
+        <div class="container">
+            <div class="fb-like" data-href="http://twitterbiogenerator.com/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="verdana"></div>
+        </div>
+        <div style="clear:both;"></div>
+        <p>Created by <a href="http://twitter.com/joshjs">@joshjs</a>.</p>
+        <div style="clear:both; padding-bottom:.1em"></div>
     </div>
+    <script>
+        var bio = document.getElementById("bio");
+        bio.onfocus = function () {
+            bio.select();
+            bio.onmouseup = function () {
+                bio.onmouseup = null;
+                return false;
+            };
+        };
+
+        function getBio() {
+            $.get("/generate", function (data) {
+                bio.value = data;
+            });
+        }
+
+        var generate = document.getElementById("generate");
+        generate.onclick = function (e) {
+            e.preventDefault();
+            getBio();
+        }
+
+        getBio();
+    </script>
 </body>
 </html>
